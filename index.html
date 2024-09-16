@@ -15,7 +15,7 @@
     <main class="main">
       <section class="section section--add-book">
         <h2 class="section__title">Tambah Buku Baru</h2>
-        <form id="bookForm" data-testid="bookForm" class="form form--add-book">
+        <form id="bookForm" data-testid="bookForm">
           <div class="form__group">
             <label for="bookFormTitle" class="form__label">Judul</label>
             <input
@@ -85,6 +85,7 @@
             type="text"
             class="form__input"
             data-testid="searchBookFormTitleInput"
+            placeholder="Cari berdasarkan judul buku"
           />
           <button
             id="searchSubmit"
@@ -97,122 +98,13 @@
         </form>
       </section>
 
-      <!-- Updated section titles -->
       <section class="section section--book-lists">
         <h2 class="section__title">Belum selesai dibaca</h2>
         <div
           id="incompleteBookList"
           class="book-list book-list--incomplete"
           data-testid="incompleteBookList"
-        >
-          <div data-bookid="123123123" class="book-item" data-testid="bookItem">
-            <h3 class="book-item__title" data-testid="bookItemTitle">
-              Judul Buku 1
-            </h3>
-            <p class="book-item__author" data-testid="bookItemAuthor">
-              Penulis: Abdul Talif
-            </p>
-            <p class="book-item__year" data-testid="bookItemYear">
-              Tahun: 2030
-            </p>
-            <div class="book-item__buttons">
-              <button
-                class="book-item__button book-item__button--complete"
-                data-testid="bookItemIsCompleteButton"
-              >
-                Selesai dibaca
-              </button>
-              <button
-                class="book-item__button book-item__button--delete"
-                data-testid="bookItemDeleteButton"
-              >
-                Hapus Buku
-              </button>
-              <button
-                class="book-item__button book-item__button--edit"
-                data-testid="bookItemEditButton"
-              >
-                Edit Buku
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div
-          id="incompleteBookList"
-          class="book-list book-list--incomplete"
-          data-testid="incompleteBookList"
-        >
-          <div data-bookid="123123123" class="book-item" data-testid="bookItem">
-            <h3 class="book-item__title" data-testid="bookItemTitle">
-              Judul Buku 1
-            </h3>
-            <p class="book-item__author" data-testid="bookItemAuthor">
-              Penulis: Abdul Talif
-            </p>
-            <p class="book-item__year" data-testid="bookItemYear">
-              Tahun: 2030
-            </p>
-            <div class="book-item__buttons">
-              <button
-                class="book-item__button book-item__button--complete"
-                data-testid="bookItemIsCompleteButton"
-              >
-                Selesai dibaca
-              </button>
-              <button
-                class="book-item__button book-item__button--delete"
-                data-testid="bookItemDeleteButton"
-              >
-                Hapus Buku
-              </button>
-              <button
-                class="book-item__button book-item__button--edit"
-                data-testid="bookItemEditButton"
-              >
-                Edit Buku
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div
-          id="incompleteBookList"
-          class="book-list book-list--incomplete"
-          data-testid="incompleteBookList"
-        >
-          <div data-bookid="123123123" class="book-item" data-testid="bookItem">
-            <h3 class="book-item__title" data-testid="bookItemTitle">
-              Judul Buku 1
-            </h3>
-            <p class="book-item__author" data-testid="bookItemAuthor">
-              Penulis: Abdul Talif
-            </p>
-            <p class="book-item__year" data-testid="bookItemYear">
-              Tahun: 2030
-            </p>
-            <div class="book-item__buttons">
-              <button
-                class="book-item__button book-item__button--complete"
-                data-testid="bookItemIsCompleteButton"
-              >
-                Selesai dibaca
-              </button>
-              <button
-                class="book-item__button book-item__button--delete"
-                data-testid="bookItemDeleteButton"
-              >
-                Hapus Buku
-              </button>
-              <button
-                class="book-item__button book-item__button--edit"
-                data-testid="bookItemEditButton"
-              >
-                Edit Buku
-              </button>
-            </div>
-          </div>
-        </div>
+        ></div>
       </section>
 
       <section class="section section--book-lists">
@@ -221,77 +113,7 @@
           id="completeBookList"
           class="book-list book-list--complete"
           data-testid="completeBookList"
-        >
-          <div data-bookid="456456456" class="book-item" data-testid="bookItem">
-            <h3 class="book-item__title" data-testid="bookItemTitle">
-              Judul Buku 2
-            </h3>
-            <p class="book-item__author" data-testid="bookItemAuthor">
-              Penulis: Penulis Buku 2
-            </p>
-            <p class="book-item__year" data-testid="bookItemYear">
-              Tahun: 2030
-            </p>
-            <div class="book-item__buttons">
-              <button
-                class="book-item__button book-item__button--complete"
-                data-testid="bookItemIsCompleteButton"
-              >
-                Selesai dibaca
-              </button>
-              <button
-                class="book-item__button book-item__button--delete"
-                data-testid="bookItemDeleteButton"
-              >
-                Hapus Buku
-              </button>
-              <button
-                class="book-item__button book-item__button--edit"
-                data-testid="bookItemEditButton"
-              >
-                Edit Buku
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div
-          id="completeBookList"
-          class="book-list book-list--complete"
-          data-testid="completeBookList"
-        >
-          <div data-bookid="456456456" class="book-item" data-testid="bookItem">
-            <h3 class="book-item__title" data-testid="bookItemTitle">
-              Judul Buku 2
-            </h3>
-            <p class="book-item__author" data-testid="bookItemAuthor">
-              Penulis: Penulis Buku 2
-            </p>
-            <p class="book-item__year" data-testid="bookItemYear">
-              Tahun: 2030
-            </p>
-            <div class="book-item__buttons">
-              <button
-                class="book-item__button book-item__button--complete"
-                data-testid="bookItemIsCompleteButton"
-              >
-                Selesai dibaca
-              </button>
-              <button
-                class="book-item__button book-item__button--delete"
-                data-testid="bookItemDeleteButton"
-              >
-                Hapus Buku
-              </button>
-              <button
-                class="book-item__button book-item__button--edit"
-                data-testid="bookItemEditButton"
-              >
-                Edit Buku
-              </button>
-            </div>
-          </div>
-        </div>
+        ></div>
       </section>
     </main>
   </body>

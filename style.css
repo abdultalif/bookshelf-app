@@ -20,6 +20,10 @@ body {
   margin-bottom: 20px;
 }
 
+.header__title {
+  font-size: 2em;
+}
+
 .main {
   display: flex;
   flex-wrap: wrap;
