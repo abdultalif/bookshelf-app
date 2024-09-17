@@ -29,6 +29,7 @@ function createBookElement(book) {
   const bookItem = document.createElement("div");
   bookItem.classList.add("book-item");
   bookItem.dataset.bookid = book.id;
+  bookItem.setAttribute("data-testid", "bookItem");
 
   bookItem.innerHTML = `
     <h3 class="book-item__title" data-testid="bookItemTitle">${book.title}</h3>
